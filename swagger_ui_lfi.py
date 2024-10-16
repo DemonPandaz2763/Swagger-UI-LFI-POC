@@ -2,10 +2,6 @@
 import argparse
 import requests
 
-class colors:
-    cyan = "\033[96m"
-    reset = "\033[0m"
-
 def find_file(url, file_path):
     url = f"{url}/api/v1/admin/read/log?log_file_name=../../../{file_path}"
     
